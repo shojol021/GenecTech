@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <title>GenecTech</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-base-100 h-28">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li class="customFont italic" style="font-style: italic;"><a>HOME</a></li>
+                        <li><a>WHY US?</a></li>
+                        <li><a>SERVICES</a></li>
+                        <li><a>ABOUT US</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost normal-case text-xl"><img src="logo.png" alt=""></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>HOME</a></li>
+                    <li><a>WHY US?</a></li>
+                    <li><a>SERVICES</a></li>
+                    <li><a>ABOUT US</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn btn-sm rounded-full bg-gradient-to-r from-fuchsia-900 to-pink-600 text-white px-5">Contact
+                    US</a>
+                <button class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <button class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                        </svg>
+                        <span class="badge badge-xs badge-primary indicator-item"></span>
+                    </div>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="banner-slider">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="slide first">
+                    <img src="temp/banner0.jpg" />
+                </div>
+                <div class="slide">
+                    <img src="temp/banner1.jpeg" />
+                </div>
+                <div class="slide">
+                    <img src="temp/banner2.png" />
+                </div>
+                <div class="slide">
+                    <img src="temp/banner3.jpeg" />
+                </div>
+
+                <!-- auto navigation -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+            </div>
+
+            <!-- manual navigation -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+
+
+
+        <!-- <div class="carousel w-full relative">
+          <div class="carousel-inner">
+            <div id="item1" class="carousel-item w-full">
+              <img src="temp/banner0.jpg" class="w-full" />
+            </div>
+            <div id="item2" class="carousel-item w-full">
+              <img src="temp/banner1.jpeg" class="w-full" />
+            </div>
+            <div id="item3" class="carousel-item w-full">
+              <img src="temp/banner2.png" class="w-full" />
+            </div>
+            <div id="item4" class="carousel-item w-full">
+              <img src="temp/banner3.jpeg" class="w-full" />
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center w-full py-2 gap-2 absolute bottom-0">
+          <a href="#item1" class="btn btn-xs rounded-full px-3 active">1</a>
+          <a href="#item2" class="btn btn-xs rounded-full px-3">2</a>
+          <a href="#item3" class="btn btn-xs rounded-full px-3">3</a>
+          <a href="#item4" class="btn btn-xs rounded-full px-3">4</a>
+        </div> -->
+    </section>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</body>
+
+
+</html>
