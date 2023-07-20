@@ -31,7 +31,8 @@
                         <li><a>ABOUT US</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost normal-case text-xl"><img src="logo.png" alt=""></a>
+                <a class="btn btn-ghost normal-case text-xl"><img src="logo.png" alt=""
+                        class="h-10 md:h-12 lg:h-16"></a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
@@ -68,72 +69,94 @@
     <section class="banner-slider">
         <div class="slider">
             <div class="slides">
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio1" onchange="changeBackground(1)">
+                <input type="radio" name="radio-btn" id="radio2" onchange="changeBackground(2)">
+                <input type="radio" name="radio-btn" id="radio3" onchange="changeBackground(3)">
+                <input type="radio" name="radio-btn" id="radio4" onchange="changeBackground(4)">
 
-                <div class="slide first">
-                    <img src="temp/banner0.jpg" />
-                </div>
-                <div class="slide">
-                    <img src="temp/banner1.jpeg" />
-                </div>
-                <div class="slide">
-                    <img src="temp/banner2.png" />
-                </div>
-                <div class="slide">
-                    <img src="temp/banner3.jpeg" />
+                <div class="slide first bg-cover bg-center flex flex-col justify-center items-center"
+                    style="background-image: url('temp/banner0.jpg'); height: 90vh;">
+                    <h2 class="text-white text-4xl md:text-6xl lg:text-8xl customFont w-full px-20">Its All About <span
+                            class="text-pink-600">CX experience</span></h2>
                 </div>
 
-                <!-- auto navigation -->
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
+                <div class="slide bg-cover bg-center flex flex-col justify-center items-center"
+                    style="background-image: url('temp/banner1.jpeg'); height: 90vh;">
+                    <h2 class="text-white text-4xl md:text-6xl lg:text-8xl customFont w-full px-20">Assembling <span
+                            class="text-pink-600">world-class</span> teams is our expertise</h2>
                 </div>
+
+                <div class="slide bg-cover bg-center flex flex-col justify-center items-center"
+                    style="background-image: url('temp/banner2.png'); height: 90vh;">
+                    <h2 class="text-white text-4xl md:text-6xl lg:text-8xl customFont w-full px-20">Lorem ipsum dolor
+                        sit amet</h2>
+                </div>
+
+                <div class="slide bg-cover bg-center flex flex-col justify-center items-center"
+                    style="background-image: url('temp/banner3.jpeg'); height: 90vh;">
+                    <h2 class="text-white text-4xl md:text-6xl lg:text-8xl customFont w-full px-20">Lorem, ipsum dolor
+                    </h2>
+                </div>
+
+
 
             </div>
 
             <!-- manual navigation -->
             <div class="navigation-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
+                <label for="radio1" class="manual-btn manual-btn1"></label>
+                <label for="radio2" class="manual-btn manual-btn2"></label>
+                <label for="radio3" class="manual-btn manual-btn3"></label>
+                <label for="radio4" class="manual-btn manual-btn4"></label>
+            </div>
+
+            <!-- auto navigation -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
             </div>
         </div>
 
+    </section>
 
-
-        <!-- <div class="carousel w-full relative">
-          <div class="carousel-inner">
-            <div id="item1" class="carousel-item w-full">
-              <img src="temp/banner0.jpg" class="w-full" />
+    <section class="flex justify-center">
+        <div class="grid md:grid-cols-3">
+            <div class="card w-96 bg-base-100 shadow-xl m-5">
+                <div class="card-body">
+                    <h2 class="card-title bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-red-500">ISO 27001 certification</h2>
+                    <h2 class="font-bold text-gray-500">Information security management</h2>
+                    <p>IT security, cybersecurity and privacy protection are vital for companies and organizations today. The ISO/IEC 27000 family of standards keeps them safe.</p>
+                </div>
             </div>
-            <div id="item2" class="carousel-item w-full">
-              <img src="temp/banner1.jpeg" class="w-full" />
+            <div class="card w-96 bg-base-100 shadow-xl m-5">
+                <div class="card-body">
+                    <h2 class="card-title bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-red-500">Experienced Engineers</h2>
+                    <p>78.70% of the population in Bangladesh has completed their studies in Computer science. From our Career day event which is taking place in multiple universities. We are able to choose the best candidates for your business.</p>
+                </div>
             </div>
-            <div id="item3" class="carousel-item w-full">
-              <img src="temp/banner2.png" class="w-full" />
+            <div class="card w-96 bg-base-100 shadow-xl m-5">
+                <div class="card-body">
+                    <h2 class="card-title bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-red-500">24/7 Live Support</h2>
+                    <p>If you’re awake, we are too. When you need help, our team of experts will work with you 24/7 live to reach a quick and efficient resolution.</p>
+                </div>
             </div>
-            <div id="item4" class="carousel-item w-full">
-              <img src="temp/banner3.jpeg" class="w-full" />
+            <div class="card w-96 bg-base-100 shadow-xl m-5">
+                <div class="card-body">
+                    <h2 class="card-title bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-red-500">Cost-effective</h2>
+                    <p>We aim to provide low operating costs for our clients that allow them to increase revenue for their business without having to sacrifice quality customer experience. </p>
+                    <!-- <div class="card-actions justify-center">
+                        <button class="btn btn-sm btn-outline border-purple-500 text-purple-500 hover:text-white hover:bg-gradient-to-r from-purple-700 to-pink-500 hover:border-purple-500">Details</button>
+                    </div> -->
+                </div>
             </div>
-          </div>
         </div>
-        <div class="flex justify-center w-full py-2 gap-2 absolute bottom-0">
-          <a href="#item1" class="btn btn-xs rounded-full px-3 active">1</a>
-          <a href="#item2" class="btn btn-xs rounded-full px-3">2</a>
-          <a href="#item3" class="btn btn-xs rounded-full px-3">3</a>
-          <a href="#item4" class="btn btn-xs rounded-full px-3">4</a>
-        </div> -->
     </section>
 
 
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <script src="dom.js"></script>
 </body>
 
 

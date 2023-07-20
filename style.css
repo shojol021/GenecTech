@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'SancoaleSoftenedMedium';
     src: url('fonts/Sancoale\ Softened\ Medium.ttf');
-  }
+}
 
 .customFont {
     font-family: 'SancoaleSoftenedMedium';
@@ -42,6 +42,12 @@
     transition: 1s;
 }
 
+@media (max-width: 640px) {
+    .slide {
+        height: 70vh !important;
+    }
+}
+
 .navigation-manual {
     position: absolute;
     width: 100%;
@@ -58,7 +64,7 @@
     transition: 1s;
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
     margin-right: 40px;
 }
 
@@ -67,15 +73,18 @@
     background: purple;
 }
 
-#radio1:checked ~ .first {
+#radio1:checked~.first {
     margin-left: 0;
 }
-#radio2:checked ~ .first {
+
+#radio2:checked~.first {
     margin-left: -20%;
 }
-#radio3:checked ~ .first {
+
+#radio3:checked~.first {
     margin-left: -40%;
 }
-#radio4:checked ~ .first {
+
+#radio4:checked~.first {
     margin-left: -60%;
 }
