@@ -1,4 +1,4 @@
-/* ================== custom font =====================*/
+/* ================== custom font and color =====================*/
 @font-face {
     font-family: 'SancoaleSoftenedMedium';
     src: url('fonts/Sancoale\ Softened\ Medium.ttf');
@@ -10,6 +10,10 @@
 
 .italic {
     font-style: italic;
+}
+
+.primary-color {
+    color: rgb(229, 221, 0);
 }
 
 
