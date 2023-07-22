@@ -10,11 +10,11 @@ function changeBackground(btnIndex) {
 
     counter = btnIndex;
     clearInterval(slideTimer);
-    slideTimer = setInterval(slideNext, 3000);
+    slideTimer = setInterval(slideNext, 5000);
 }
 
 let counter = 1;
-let slideTimer = setInterval(slideNext, 3000);
+let slideTimer = setInterval(slideNext, 5000);
 
 function slideNext() {
     document.getElementById('radio' + counter).checked = true;
@@ -25,4 +25,4 @@ function slideNext() {
     }
 }
 
-slideTimer = setInterval(slideNext, 3000);
+slideTimer = setInterval(slideNext, 5000);

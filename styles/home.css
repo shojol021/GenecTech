@@ -92,3 +92,46 @@
 #radio4:checked~.first {
     margin-left: -60%;
 }
+
+/* ========================== Custom Carousal end ======================= */
+
+/* ====================== quote ================ */
+
+.quote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffbc69;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quote-text {
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .quote-text::before,
+  .quote-text::after {
+    content: "\201C";
+    position: absolute;
+    font-size: 3rem;
+    color: #fffb00;
+  }
+  
+  .quote-text::before {
+    top: -20px;
+    left: -20px;
+  }
+  
+  .quote-text::after {
+    bottom: -20px;
+    right: -20px;
+  }
+  
+  /* ====================== quote end ================ */
+
+  
