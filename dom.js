@@ -60,5 +60,5 @@ const typing = () => {
     }
 }
 
-typing();
+// typing();
 

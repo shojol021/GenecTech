@@ -134,4 +134,13 @@
   
   /* ====================== quote end ================ */
 
+/* Define the gradient background */
+.gradient-bg-hover {
+    background-image: linear-gradient(to bottom, white, #FBBF24);
+}
+
+/* Add hover effect */
+.gradient-bg-hover:hover {
+    background-color: #FBBF24; /* Change to yellow-600 color */
+}
   
