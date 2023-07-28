@@ -85,3 +85,36 @@ updateNavHeight();
 
 // Listen for the scroll event
 window.addEventListener("scroll", updateNavHeight);
+
+
+// ======================================== emailJS =====================================
+
+function sendEmail() {
+
+    const name = document.getElementById('name').value
+    const email = document.getElementById('email').value
+    const country = document.getElementById('countrySelect').value
+    const phone = document.getElementById('phone').value
+    const message = document.getElementById('message').value
+
+    console.log(name, email, country, phone, message)
+
+    var params = {
+        to_name: 'Adnan',
+        from_name: name,
+        email_id: email,
+        country: country,
+        phone: phone,
+        message: message
+    }
+
+    const serviceId = "service_knqq1dc"
+    const templateId = "template_hzqy7mc"
+
+    emailjs
+        .send(serviceId, templateId, params)
+        .then(res => {
+            alert("message sent successfully")
+        })
+}
+

@@ -10,6 +10,13 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("Ww-TmM1cYPjWt1siO");
+        })();
+    </script>
     <title>GeneCTech | About Us</title>
 </head>
 
@@ -56,7 +63,8 @@
         <h2
             class="text-4xl font-bold text-center py-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-yellow-600">
             Send us message now</h2>
-        <p class="text-center pb-6">Reach out without hesitation. We value your messages and respond with utmost care.</p>
+        <p class="text-center pb-6">Reach out without hesitation. We value your messages and respond with utmost care.
+        </p>
 
 
         <div class="mx-auto flex">
@@ -68,7 +76,7 @@
                                 <span class="label-text font-bold">Your Full Name</span>
                             </label>
                             <input type="text" placeholder="Enter you full name here"
-                                class="input input-bordered w-full w-1/2" />
+                               id="name" class="input input-bordered w-full w-1/2" />
 
                         </div>
                         <div class="form-control w-full w-1/2">
@@ -76,7 +84,7 @@
                                 <span class="label-text font-bold">Your Email Address</span>
                             </label>
                             <input type="email" placeholder="Enter your email address here"
-                                class="input input-bordered w-full w-1/2" />
+                               id="email" class="input input-bordered w-full w-1/2" />
 
                         </div>
                     </div>
@@ -94,7 +102,7 @@
                                 <span class="label-text font-bold">Phone Number</span>
                             </label>
                             <input type="text" placeholder="Enter your phone number"
-                                class="input input-bordered w-full w-1/2" />
+                               id="phone" class="input input-bordered w-full w-1/2" />
 
                         </div>
                     </div>
@@ -103,11 +111,11 @@
                             <label class="label">
                                 <span class="label-text font-bold">Your message</span>
                             </label>
-                            <textarea class="textarea textarea-bordered h-24 w-full"
+                            <textarea id="message" class="textarea textarea-bordered h-24 w-full"
                                 placeholder="Type your message here"></textarea>
                         </div>
 
-                        <button
+                        <button onclick=sendEmail()
                             class="btn border-yellow-500 text-yellow-700 hover:text-white hover:bg-gradient-to-tl from-gray-700 to-yellow-500 hover:border-black">Send</button>
                     </div>
                 </div>
