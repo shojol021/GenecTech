@@ -12,64 +12,49 @@
     <title>GeneCTech | Services</title>
 </head>
 
-<body>
+<body class="pt-28">
     <header>
-        <nav class="navbar bg-orange-500 h-28">
+        <nav id="navbar" class="navbar bg-neutral text-neutral-content fixed top-0 z-50">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
                     </label>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-gray-800">
                         <li class="customFont italic" style="font-style: italic;"><a href="index.html">HOME</a></li>
-                        <li><a>WHY US?</a></li>
+                        <li><a href="why_us.html">WHY US?</a></li>
                         <li><a href="services.html">SERVICES</a></li>
-                        <li><a>ABOUT US</a></li>
+                        <li><a href="about_us.html">ABOUT US</a></li>
                     </ul>
                 </div>
-                <a class="ml-6"><img src="logo2.png" alt="" class="h-12 md:h-16 lg:h-32"></a>
+                <a class="ml-6 lg:ml-12"><img src="logo2.png" alt="" id="logo" class="h-12 md:h-16 lg:h-32"></a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a>WHY US?</a></li>
-                    <li class="primary-color font-bold"><a href="services.html">SERVICES</a></li>
-                    <li><a href="about_us.html">ABOUT US</a></li>
+                    <li><a href="index.html" class="hover:text-white hover:font-bold">HOME</a></li>
+                    <li><a href="why_us.html" class="hover:text-white hover:font-bold">WHY US?</a></li>
+                    <li class="text-yellow-500"><a href="services.html"
+                            class="font-bold hover:text-white hover:font-bold">SERVICES</a></li>
+                    <li><a href="about_us.html" class="hover:text-white hover:font-bold">ABOUT US</a></li>
                 </ul>
             </div>
-            <div class="navbar-end">
-                <a class="btn btn-sm rounded-full bg-gradient-to-r from-fuchsia-900 to-pink-600 text-white px-5">Contact
+            <div class="navbar-end me-6 lg:me-12">
+                <a href="contact_us.html"
+                    class="btn rounded-full gradient-bg-hover hover:font-bold hover:bg-base-100 hover:border-yellow-500 hover:border-lg text-gray-800 px-5">Contact
                     US</a>
-                <button class="btn btn-ghost btn-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                </button>
-                <button class="btn btn-ghost btn-circle">
-                    <div class="indicator">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                        </svg>
-                        <span class="badge badge-xs badge-primary indicator-item"></span>
-                    </div>
-                </button>
             </div>
         </nav>
     </header>
 
-    <section class="p-12">
-        <h2
-            class="text-6xl font-bold text-center py-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-red-500">
-            Our Customers Come <span class="primary-color">First</span></h2>
+    <section class="p-12 max-w-screen-2xl mx-auto">
+        <h2 data-aos="zoom-in"
+            class="text-6xl font-bold text-center py-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-yellow-600">
+            Our Customers Come <span class="text-yellow-500 customFont">First</span></h2>
         <p>We understand that the success of our business is intricately linked to the satisfaction and success of our
             clients. That's why we prioritize building strong relationships based on trust, open communication, and a
             deep understanding of their unique needs. We listen attentively to our customers, working collaboratively to
@@ -78,9 +63,9 @@
             results and fostering long-term partnerships.</p>
     </section>
 
-    <section class="p-12">
-        <h2
-            class="text-4xl font-bold text-center py-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-red-500">
+    <section class="p-12 max-w-screen-2xl mx-auto">
+        <h2 data-aos="zoom-in"
+            class="text-4xl font-bold text-center py-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-yellow-600">
             We handle day to day operations of your business</h2>
         <p>*Services designed to support your entire business.</p>
         <p>Today’s businesses need an agile, digital services partner to ensure long-term success. With an extensive and
@@ -88,15 +73,15 @@
             intelligent and integrated customer experiences balanced with human understanding and empathy.</p>
     </section>
 
-    <section>
+    <section class="p-12 max-w-screen-2xl mx-auto">
         <div class="flex justify-center">
             <div class="grid md:grid-cols-3">
                 <div class="card md:w-11/12 bg-base-100 shadow-xl mb-4" data-aos="fade-right" data-aos-delay="100">
                     <div class="card-body">
                         <h2
-                            class="card-title bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-red-500">
+                            class="card-title font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-yellow-600">
                             CX Management</h2>
-                        <ul class="list-disc">
+                        <ul class="list-disc text-xl">
                             <li>End-to-End support</li>
                             <li>Back-office processing</li>
                             <li>Finance and accounting</li>
@@ -109,9 +94,9 @@
                 <div class="card md:w-11/12 bg-base-100 shadow-xl mb-4" data-aos="fade-right" data-aos-delay="200">
                     <div class="card-body">
                         <h2
-                            class="card-title bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-red-500">
+                            class="card-title font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-yellow-600">
                             Analytics and Consulting</h2>
-                        <ul class="list-disc">
+                        <ul class="list-disc text-xl">
                             <li>Advanced analytics</li>
                             <li>Business process optimization</li>
                             <li>Business transformation</li>
@@ -121,9 +106,9 @@
                 <div class="card md:w-11/12 bg-base-100 shadow-xl mb-4" data-aos="fade-right" data-aos-delay="300">
                     <div class="card-body">
                         <h2
-                            class="card-title bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-red-500">
+                            class="card-title font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-yellow-600">
                             Specialized Services</h2>
-                        <ul class="list-disc">
+                        <ul class="list-disc text-xl">
                             <li>Technical Engineers</li>
                             <li>Translation and localization</li>
                             <li>Visa and consular services</li>
@@ -136,52 +121,49 @@
         </div>
     </section>
 
-    <section class="p-12">
+    <section class="p-12 max-w-screen-2xl mx-auto">
         <div class="flex space-x-12">
-            <div>
+            <div data-aos="fade-right" data-aos-delay="100">
                 <h2
-                    class="text-4xl font-bold text-center py-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-red-500">
+                    class="text-4xl font-bold text-center py-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-yellow-600">
                     Customer Support Solutions</h2>
                 <p>We offer multichannel customer support solutions, including live chat, email support, and social
                     media
                     management, to ensure prompt and efficient customer service.</p>
             </div>
-            <div>
+            <div data-aos="fade-right" data-aos-delay="200">
                 <h2
-                    class="text-4xl font-bold text-center py-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-red-500">
+                    class="text-4xl font-bold text-center py-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-yellow-600">
                     Data Analytics and Insights</h2>
                 <p>We leverage the power of data to provide actionable insights, enabling you to make informed business
                     decisions and drive continuous improvement.</p>
             </div>
         </div>
 
-        <div class="flex justify-center py-12">
+        <div data-aos="fade-up" class="flex justify-center py-12">
             <button
-                class="btn border-purple-500 text-purple-500 hover:text-white hover:bg-gradient-to-r from-purple-700 to-pink-500 hover:border-purple-500">Get in Touch</button>
+                class="btn border-yellow-500 text-yellow-700 hover:text-white hover:bg-gradient-to-tl from-gray-700 to-yellow-500 hover:border-black">Get
+                in Touch</button>
         </div>
     </section>
 
-    <footer class="footer py-10 px-20 bg-neutral text-neutral-content">
-        <div>
+    <footer>
+        <div class="footer p-10 bg-neutral text-neutral-content">
             <div>
                 <img class="h-20" src="logo.png" alt="">
             </div>
             <div>
-                <span class="footer-title ">Social</span>
-                <div class="grid grid-flow-col gap-6 my-6">
-                    <a href="https://www.twitter.com/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            class="fill-current">
-                            <path
-                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
-                            </path>
-                        </svg></a>
-                    <a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                <span class="footer-title">Follow Us on</span>
+                <div class="grid grid-flow-col gap-4">
+                    <a href="https://www.linkedin.com/company/genectech/about/"><img width="24" height="24"
+                            src="./images/Linkedin-log.png" alt=""></a>
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             class="fill-current">
                             <path
                                 d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
                             </path>
                         </svg></a>
-                    <a href="https://www.youtube.com/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             class="fill-current">
                             <path
                                 d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
@@ -189,27 +171,16 @@
                         </svg></a>
                 </div>
             </div>
-        </div>
-        <div>
-            <span class="footer-title">Email Us</span>
-            <div class=" w-full">
-                <div class="">
-                    <div class="flex mb-3">
-                        <input type="text" placeholder="username@site.com"
-                            class="input input-bordered w-full pr-16 mr-2" />
-                        <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" />
-                    </div>
-                    <div class="relative">
-                        <textarea cols="60" class="textarea textarea-info" placeholder="Bio"></textarea>
 
-                        <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Send</button>
-                    </div>
-                </div>
-            </div>
+
+        </div>
+        <div class="text-center bg-neutral text-neutral-content pb-6">
+            <p>Copyright © <span class="right">2023</span> - All right reserved by ACME Industries Ltd</p>
         </div>
     </footer>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="dom.js"></script>
     <script src="https://unpkg.com/aos/dist/aos.js"></script>
     <script>
         AOS.init();

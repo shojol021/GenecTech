@@ -4,16 +4,18 @@
     src: url('fonts/Sancoale\ Softened\ Medium.ttf');
 }
 
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
 .customFont {
-    font-family: 'SancoaleSoftenedMedium';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 .italic {
     font-style: italic;
-}
-
-.primary-color {
-    color: rgb(229, 221, 0);
 }
 
 
@@ -101,38 +103,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffbc69;
+    background-color: #ececec;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .quote-text {
+}
+
+.quote-text {
+    text-align: center;
     position: relative;
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bold;
     color: #333;
-  }
-  
-  .quote-text::before,
-  .quote-text::after {
+}
+
+.quote-text::before,
+.quote-text::after {
     content: "\201C";
     position: absolute;
-    font-size: 3rem;
-    color: #fffb00;
-  }
-  
-  .quote-text::before {
+    font-size: 6rem;
+    color: #ff9d00;
+}
+
+.quote-text::before {
     top: -20px;
     left: -20px;
-  }
-  
-  .quote-text::after {
+}
+
+.quote-text::after {
     bottom: -20px;
     right: -20px;
-  }
-  
-  /* ====================== quote end ================ */
+}
+
+/* ====================== quote end ================ */
 
 /* Define the gradient background */
 .gradient-bg-hover {
@@ -141,6 +144,6 @@
 
 /* Add hover effect */
 .gradient-bg-hover:hover {
-    background-color: #FBBF24; /* Change to yellow-600 color */
+    background-color: #FBBF24;
+    /* Change to yellow-600 color */
 }
-  

@@ -10,11 +10,11 @@ function changeBackground(btnIndex) {
 
     counter = btnIndex;
     clearInterval(slideTimer);
-    slideTimer = setInterval(slideNext, 5000);
+    slideTimer = setInterval(slideNext, 50000);
 }
 
 let counter = 1;
-let slideTimer = setInterval(slideNext, 5000);
+let slideTimer = setInterval(slideNext, 50000);
 
 function slideNext() {
     document.getElementById('radio' + counter).checked = true;
@@ -25,11 +25,9 @@ function slideNext() {
     }
 }
 
-slideTimer = setInterval(slideNext, 5000);
+slideTimer = setInterval(slideNext, 50000);
 
 
-
-// ================================== Typing effect start ==============================
 
 // ================================== Typing effect start ==============================
 
@@ -62,3 +60,28 @@ const typing = () => {
 
 // typing();
 
+// document.querySelector(".right").innerText = new Date().getFullYear()
+
+// ========== Smaller Nav =============
+
+const navbar = document.getElementById("navbar");
+const logo = document.getElementById("logo");
+const scrollThreshold = 200;
+let isScrolled = false;
+
+function updateNavHeight() {
+    if (window.scrollY > scrollThreshold && !isScrolled) {
+        navbar.classList.add("h-12");
+        logo.classList.add("lg:h-20");
+        isScrolled = true;
+    } else if (window.scrollY <= scrollThreshold && isScrolled) {
+        navbar.classList.remove("h-12");
+        logo.classList.remove("lg:h-20");
+        isScrolled = false;
+    }
+}
+
+updateNavHeight();
+
+// Listen for the scroll event
+window.addEventListener("scroll", updateNavHeight);
