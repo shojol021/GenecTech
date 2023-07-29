@@ -60,12 +60,14 @@ const typing = () => {
 
 // typing();
 
-// document.querySelector(".right").innerText = new Date().getFullYear()
+const date = new Date().getFullYear()
+document.querySelector(".right").innerText = date
 
 // ========== Smaller Nav =============
 
 const navbar = document.getElementById("navbar");
 const logo = document.getElementById("logo");
+const btn = document.getElementById("btn");
 const scrollThreshold = 200;
 let isScrolled = false;
 
@@ -73,11 +75,21 @@ function updateNavHeight() {
     if (window.scrollY > scrollThreshold && !isScrolled) {
         navbar.classList.add("h-12");
         logo.classList.add("lg:h-20");
+        
+        btn.classList.add("lg:btn-sm");
+        btn.classList.remove("lg:btn-lg");
+        btn.classList.remove("lg:btn-sm");
+        
         isScrolled = true;
     } else if (window.scrollY <= scrollThreshold && isScrolled) {
         navbar.classList.remove("h-12");
         logo.classList.remove("lg:h-20");
+        btn.classList.remove("lg:btn-sm");
+        btn.classList.add("lg:btn-lg");
+        
+        
         isScrolled = false;
+        
     }
 }
 
@@ -114,7 +126,11 @@ function sendEmail() {
     emailjs
         .send(serviceId, templateId, params)
         .then(res => {
-            alert("message sent successfully")
+            swal("Message Sent!", "We will respond soon", "success");
         })
+        document.getElementById('name').value = ''
+        document.getElementById('email').value = ''
+        document.getElementById('countrySelect').value = ''
+        document.getElementById('phone').value = ''
+        document.getElementById('message').value = ''
 }
-

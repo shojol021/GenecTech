@@ -12,7 +12,7 @@
     <title>GeneCTech | About Us</title>
 </head>
 
-<body class="pt-28">
+<body class="pt-16 md:pt-20 lg:pt-36">
     <header>
         <nav id="navbar" class="navbar bg-neutral text-neutral-content fixed top-0 z-50">
             <div class="navbar-start">
@@ -27,7 +27,7 @@
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-gray-800">
                         <li class="customFont italic" style="font-style: italic;"><a href="index.html">HOME</a></li>
-                        <li><a href="why_us.html">WHY US?</a></li>
+                        <li><a href="index.html">WHY US?</a></li>
                         <li><a href="services.html">SERVICES</a></li>
                         <li><a href="about_us.html">ABOUT US</a></li>
                     </ul>
@@ -37,7 +37,7 @@
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
                     <li><a href="index.html" class="hover:text-white hover:font-bold">HOME</a></li>
-                    <li><a href="why_us.html" class="hover:text-white hover:font-bold">WHY US?</a></li>
+                    <li><a href="index.html" class="hover:text-white hover:font-bold">WHY US?</a></li>
                     <li><a href="services.html" class="hover:text-white hover:font-bold">SERVICES</a></li>
                     <li class="text-yellow-500"><a href="about_us.html"
                             class="font-bold hover:text-white hover:font-bold" href="about_us.html">ABOUT US</a></li>
@@ -45,13 +45,13 @@
             </div>
             <div class="navbar-end me-6 lg:me-12">
                 <a href="contact_us.html"
-                    class="btn rounded-full gradient-bg-hover hover:font-bold hover:bg-base-100 hover:border-yellow-500 hover:border-lg text-gray-800 px-5">Contact
+                id="btn" class="btn btn-sm lg:btn-lg rounded-full gradient-bg-hover hover:font-bold hover:bg-base-100 hover:border-yellow-500 hover:border-lg text-gray-800 px-5">Contact
                     US</a>
             </div>
         </nav>
     </header>
 
-    <section class="p-12 max-w-screen-2xl mx-auto">
+    <section class="p-6 lg:p-12 max-w-screen-2xl mx-auto">
         <h2
             class="text-4xl font-bold text-center py-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-yellow-600">
             Services we offer</h2>
@@ -67,9 +67,12 @@
         </div>
     </section>
 
-    <section class="p-12 max-w-screen-2xl mx-auto">
-        <div class="flex space-x-12">
-            <div data-aos="fade-right" class="w-2/3">
+    <section class="p-6 lg:p-12 max-w-screen-2xl mx-auto">
+        <div class="md:flex flex-row-reverse md:space-x-12">
+            <div data-aos="fade-left">
+                <img src="images/team.webp" alt="">
+            </div>
+            <div data-aos="fade-right" class="md:w-2/3">
                 <h2
                     class="text-4xl font-bold text-center py-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-yellow-600">
                     Our Team</h2>
@@ -79,9 +82,7 @@
                     each bringing their unique set of skills and experiences to the table. Together, we form a
                     powerhouse of creativity, technical expertise, and strategic thinking.</p>
             </div>
-            <div data-aos="fade-left">
-                <img src="images/team.webp" alt="">
-            </div>
+            
         </div>
 
     </section>
@@ -103,8 +104,8 @@
 
 
     <footer>
-        <div class="footer p-10 bg-neutral text-neutral-content">
-            <div>
+        <div class="footer p-10 bg-neutral text-neutral-content flex">
+            <div class="w-5/12">
                 <img class="h-20" src="logo.png" alt="">
             </div>
             <div>
@@ -129,8 +130,8 @@
 
 
         </div>
-        <div class="text-center bg-neutral text-neutral-content pb-6">
-            <p>Copyright © <span class="right">2023</span> - All right reserved by ACME Industries Ltd</p>
+        <div class="text-center bg-neutral text-gray-400 pb-6">
+            <p>Copyright © <span class="right">2023</span> - All right reserved by GeneCTech</p>
         </div>
     </footer>
 
